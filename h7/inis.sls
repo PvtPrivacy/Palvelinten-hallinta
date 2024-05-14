@@ -23,8 +23,8 @@ set_default_editor: # < Big Sticker/Label/Section
 # Install a plugin or extension for micro
 install_micro_plugin:
   cmd.run:
-    - name: micro -plugin install nordcolors
-    - unless: micro -plugin list | grep -q nordcolors
+    - name: micro --plugin install nordcolors
+    - unless: micro --plugin list | grep -q nordcolors
   require:
     - pkg: install_micro
 
@@ -38,8 +38,7 @@ Copyright: lolololol
 
 
 
-
-
+# IGNORE 
 # Restart the Salt master in order to pick up this change:
 
 pkill salt-master
