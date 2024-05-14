@@ -7,7 +7,6 @@ install_moreapps:
   pkg.installed:
     - name: curl
     - name: cowsay
-    - name: pacman
 
 # Install micro text editor
 install_micro:
@@ -34,6 +33,8 @@ create_patchnotes:
     - name:  /srv/salt/patchnotes.txt
     - contents: Thank you for using my init.sls file C:
 Copyright: lolololol
+
+
 
 
 
